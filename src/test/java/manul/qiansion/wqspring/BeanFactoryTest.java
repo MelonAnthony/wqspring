@@ -2,7 +2,11 @@ package manul.qiansion.wqspring;
 
 import manul.qiansion.wqspring.factory.AutowireCapableBeanFactory;
 import manul.qiansion.wqspring.factory.BeanFactory;
+import manul.qiansion.wqspring.io.ResourceLoader;
+import manul.qiansion.wqspring.xml.XmlBeanDefinitionReader;
 import org.junit.Test;
+
+import java.util.Map;
 
 /**
  * @Auther: Anthony
@@ -14,24 +18,18 @@ public class BeanFactoryTest {
     @Test
     public void test() throws Exception {
 
-        //1.初始化beanFactory
+        //1.读取配置
+        XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(new ResourceLoader());
+        xmlBeanDefinitionReader.loadBeanDefinition("wqspring.xml");
+
+        //2.初始化BeanFactory并注册bean
         BeanFactory beanFactory = new AutowireCapableBeanFactory();
-
-        //2.bean定义
-        BeanDefinition beanDefinition = new BeanDefinition();
-        beanDefinition.setBeanClassName("manul.qiansion.wqspring.HelloWorldService");
-
-        //3.设置属性
-        PropertyValues propertyValues = new PropertyValues();
-        propertyValues.addPropertyValue(new PropertyValue("text","hello"));
-        beanDefinition.setPropertyValues(propertyValues);
-
-        //4.生成bean
-        beanFactory.registerBeanDefinition("helloWorldService", beanDefinition);
-
+        for(Map.Entry<String,BeanDefinition> beanDefinitionEntry:xmlBeanDefinitionReader.getRegistryMap().entrySet()){
+            beanFactory.registerBeanDefinition(beanDefinitionEntry.getKey(),beanDefinitionEntry.getValue());
+        }
 
         //3.获取bean
-        HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
+        HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloService");
         helloWorldService.helloWorld();
     }
 }
