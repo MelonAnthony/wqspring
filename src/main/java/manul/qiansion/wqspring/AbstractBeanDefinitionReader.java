@@ -3,6 +3,7 @@ package manul.qiansion.wqspring;
 import manul.qiansion.wqspring.io.ResourceLoader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 /**
@@ -15,6 +16,7 @@ public abstract class AbstractBeanDefinitionReader implements BeanDefinitionRead
     private Map<String,BeanDefinition> registry;
 
     private ResourceLoader resourceLoader;
+
 
     protected AbstractBeanDefinitionReader(ResourceLoader resourceLoader) {
         this.registry = new HashMap<String,BeanDefinition>();

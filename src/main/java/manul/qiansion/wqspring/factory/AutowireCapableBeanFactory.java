@@ -1,6 +1,7 @@
 package manul.qiansion.wqspring.factory;
 
 import manul.qiansion.wqspring.BeanDefinition;
+import manul.qiansion.wqspring.BeanReference;
 import manul.qiansion.wqspring.PropertyValue;
 
 import java.lang.reflect.Field;
@@ -14,6 +15,7 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory{
     @Override
     protected Object doCreateBean(BeanDefinition beanDefinition) throws Exception {
         Object bean = createBeanInstance(beanDefinition);
+        beanDefinition.setBean(bean);
         applyPropertyValues(bean,beanDefinition);
         return bean;
     }
@@ -22,7 +24,12 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory{
         for(PropertyValue propertyValue:mbd.getPropertyValues().getPropertyValues()){
             Field declareField = bean.getClass().getDeclaredField(propertyValue.getName());
             declareField.setAccessible(true);
-            declareField.set(bean,propertyValue.getValue());
+            Object value = propertyValue.getValue();
+            if (value instanceof BeanReference) {
+                BeanReference beanReference = (BeanReference) value;
+                value = getBean(beanReference.getName());
+            }
+            declareField.set(bean,value);
         }
     }
 

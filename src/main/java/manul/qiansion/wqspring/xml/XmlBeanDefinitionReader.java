@@ -2,6 +2,7 @@ package manul.qiansion.wqspring.xml;
 
 import manul.qiansion.wqspring.AbstractBeanDefinitionReader;
 import manul.qiansion.wqspring.BeanDefinition;
+import manul.qiansion.wqspring.BeanReference;
 import manul.qiansion.wqspring.PropertyValue;
 import manul.qiansion.wqspring.io.ResourceLoader;
 import org.w3c.dom.Document;
@@ -11,8 +12,6 @@ import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -94,10 +93,20 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader{
                 Element propertyEle = (Element) node;
                 String name = propertyEle.getAttribute("name");
                 String value = propertyEle.getAttribute("value");
-                PropertyValue propertyValue = new PropertyValue(name,value);
-                bd.getPropertyValues().addPropertyValue(propertyValue);
+                if(value!=null && value.length()>0){
+                    bd.getPropertyValues().addPropertyValue(new PropertyValue(name,value));
+                }else{
+                    //依赖关系
+                    String ref = propertyEle.getAttribute("ref");
+                    if(ref==null || ref.length()==0) {
+                        throw new IllegalArgumentException("Configuration problem: <property> element for property "
+                                + name + "' must specify a ref or value");
+                    }
+                    BeanReference beanReference = new BeanReference(ref);
+                    bd.getPropertyValues().addPropertyValue(new PropertyValue(name,beanReference));
+                    }
+                }
             }
         }
-    }
 
 }
