@@ -54,9 +54,12 @@
 
 相比step4，对于相互依赖的bean引入了beanReference。
 
-在读取xml文件时，依赖关系ref 就用beanReference来代替。然后在初始化时，根据beanReference里面的name属性，在IOC容器中找到跟他同名的beanDefinition，若beanDefinition中的bean没有初始化，则创建，已经初始化了，就将该bean通过反射赋值给相应的属性。
+在读取xml文件时，依赖关系ref 就用beanReference来代替。然后在初始化时，根据beanReference里面的name属性，在beanDefinitionMap中找到跟他同名的beanDefinition，若beanDefinition中的bean没有初始化，则创建，已经初始化了，就将该bean通过反射赋值给相应的属性。
 
 # step6-ApplicationContext登场
 
 *step-6-invite-application-context*
 
+相比step5，此处增加了ApplicationContext。
+
+在没有ApplicationContext之前，bean的获取是在BeanFactory里的，bean的初始化是在BeanDefinitionReader里的，这里的ApplicationContext就是将两者结合，形成一个既能初始化bean，又能获取bean的简单IOC容器。

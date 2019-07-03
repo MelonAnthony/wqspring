@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f14d7eb8-f293-4cf8-91fd-9e47ab458ac5" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/factory/BeanFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/context/AbstractApplicationContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/context/ApplicationContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/context/ClassPathXmlApplicationContext.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/context/ApplicationContextTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/AbstractBeanDefinitionReader.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/AbstractBeanDefinitionReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/BeanDefinition.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/BeanDefinition.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/BeanDefinitionReader.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/BeanDefinitionReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/PropertyValue.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/PropertyValue.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/PropertyValues.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/PropertyValues.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/factory/AbstractBeanFactory.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/factory/AbstractBeanFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/factory/AutowireCapableBeanFactory.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/factory/AutowireCapableBeanFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/factory/BeanFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/io/Resource.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/io/Resource.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/io/ResourceLoader.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/io/ResourceLoader.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/io/UrlResource.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/io/UrlResource.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/xml/XmlBeanDefinitionReader.java" afterPath="$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/xml/XmlBeanDefinitionReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/BeanFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/BeanFactoryTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/io/ResourceLoaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/beans/io/ResourceLoaderTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/xml/XmlBeanDefinitionReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/manul/qiansion/wqspring/beans/xml/XmlBeanDefinitionReaderTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/AbstractBeanDefinitionReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/BeanDefinition.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/BeanDefinitionReader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/PropertyValue.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/PropertyValues.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/factory/AbstractBeanFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/factory/AutowireCapableBeanFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/factory/BeanFactory.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/io/Resource.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/io/ResourceLoader.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/io/UrlResource.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/manul/qiansion/wqspring/xml/XmlBeanDefinitionReader.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/manul/qiansion/wqspring/BeanFactoryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/manul/qiansion/wqspring/BeanFactoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/manul/qiansion/wqspring/io/ResourceLoaderTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/manul/qiansion/wqspring/xml/XmlBeanDefinitionReaderTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/xml/XmlBeanDefinitionReader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -122,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/BeanReference.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -132,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/factory/AutowireCapableBeanFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
-              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -579,8 +544,16 @@
       <workItem from="1561428684563" duration="110000" />
       <workItem from="1562058593072" duration="3966000" />
       <workItem from="1562073056428" duration="33000" />
-      <workItem from="1562121387356" duration="2252000" />
+      <workItem from="1562121387356" duration="2366000" />
     </task>
+    <task id="LOCAL-00001" summary="添加ApplicationContext">
+      <created>1562123681413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562123681413</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -616,7 +589,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40236000" />
+    <option name="totallyTimeSpent" value="40350000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -684,6 +657,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加ApplicationContext" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加ApplicationContext" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1001,7 +978,7 @@
         <state relative-caret-position="266">
           <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1028,7 +1005,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/factory/AutowireCapableBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1054,7 +1031,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/beans/xml/XmlBeanDefinitionReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1090,7 +1067,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/manul/qiansion/wqspring/BeanReference.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding />
         </state>
       </provider>
