@@ -1,7 +1,7 @@
 # wqspring
 微型spring-了解spring
 
-#step1-基本容器
+# step1-基本容器
 
 *step-1-container-register-and-get*
 
@@ -48,5 +48,15 @@
 
 复制到IOC容器的BeanDefinitionMap中.
 
+# Step5-bean的相互依赖
 
+*step-5-inject-bean-to-bean*
+
+相比step4，对于相互依赖的bean引入了beanReference。
+
+在读取xml文件时，依赖关系ref 就用beanReference来代替。然后在初始化时，根据beanReference里面的name属性，在IOC容器中找到跟他同名的beanDefinition，若beanDefinition中的bean没有初始化，则创建，已经初始化了，就将该bean通过反射赋值给相应的属性。
+
+# step6-ApplicationContext登场
+
+*step-6-invite-application-context*
 

@@ -1,10 +1,12 @@
 package manul.qiansion.wqspring;
 
-import manul.qiansion.wqspring.factory.AbstractBeanFactory;
-import manul.qiansion.wqspring.factory.AutowireCapableBeanFactory;
-import manul.qiansion.wqspring.factory.BeanFactory;
-import manul.qiansion.wqspring.io.ResourceLoader;
-import manul.qiansion.wqspring.xml.XmlBeanDefinitionReader;
+import manul.qiansion.wqspring.beans.BeanDefinition;
+import manul.qiansion.wqspring.beans.factory.AbstractBeanFactory;
+import manul.qiansion.wqspring.beans.factory.AutowireCapableBeanFactory;
+import manul.qiansion.wqspring.beans.io.ResourceLoader;
+import manul.qiansion.wqspring.beans.xml.XmlBeanDefinitionReader;
+import manul.qiansion.wqspring.context.ApplicationContext;
+import manul.qiansion.wqspring.context.ClassPathXmlApplicationContext;
 import org.junit.Test;
 
 import java.util.Map;
@@ -53,4 +55,5 @@ public class BeanFactoryTest {
         HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
         helloWorldService.helloWorld();
     }
+
 }
